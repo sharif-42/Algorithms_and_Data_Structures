@@ -19,3 +19,23 @@ for i in range(R):
     for j in range(C):
         print(matrix[i][j], end=" ")
     print()
+
+#############################################################
+#        Take Two Dimensional List As Input                 #
+#############################################################
+"""
+dummy inputs
+    7 4
+    1 0 1 1
+    0 1 1 1
+    0 1 0 0
+    1 0 1 1
+    0 0 0 1
+    1 1 1 0
+    1 1 0 0
+"""
+rows, columns = list(map(int, input().split()))  # input no. of row and column
+lst = []
+for i in range(rows):
+    a = list(map(int, input().split()))
+    lst.append(a)
